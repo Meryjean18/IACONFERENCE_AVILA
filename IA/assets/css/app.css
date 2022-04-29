@@ -1,0 +1,124 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*10px*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.banner {
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 30rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.header {
+    background-color: #052b65;
+    color: white;
+}
+
+.menu-mobile:hover {
+    cursor: pointer;
+}
+
+
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    
+}
+
+.titulo h1 {
+    font-size: 1.25rem;
+}
+
+.subtitulo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.subtitulo h3 {
+    font-size: 1rem;
+}
+
+.agenda {
+    background-color: #22127c;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.agenda h5{
+    font-weight:400;
+    font-size: 1rem;
+}
+
+.agenda_tema {
+    background-color: #dbf1ff;
+    border-radius: 6px;
+    padding: 8px 16px;
+    margin-bottom: 2rem;
+}
+
+.agenda_tema h4{
+    color: darkblue;
+    text-align: center;
+}
+
+.agenda_tema p{
+    color: black;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+
+}
+
+.agenda_dia {
+    margin: 1.5rem 0;
+   
+}
+
+@media(min-width: 768px) {
+    .agenda_dia {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+    }
+}
+
+.agenda_conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    max-width: 100%;
+}
